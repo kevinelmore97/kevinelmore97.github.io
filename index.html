@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Portafolio</title>
+	
+	<style>
+		* {
+	box-sizing: border-box;
+}
+
+html {
+	font-family: 'Lato', sans-serif;
+}
+
+.lateral {
+	background-color: #56B3AB;
+	bottom: 0;
+	left: 0;
+	padding: 1em;
+	position: fixed;
+	top: 0;
+	width: 350px;
+}
+
+/* Perfil */
+
+.perfil__circulo {
+	border-radius: 100%;
+	height: 100px;
+	overflow: hidden;
+	margin: 0;
+	width: 100px;
+}
+
+.perfil__foto {
+	width: 100%;
+}
+
+.perfil__nombres {
+	color: #fff;
+	font-size: 20px;
+	margin-left: .5em;
+	width: 250px;
+}
+
+.perfil__nombres, .perfil__circulo {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+/* Información */
+
+.informacion {
+	color: #0F6A62;
+	position: absolute;
+	bottom: 1em;
+}
+
+.informacion__titulo {
+	font-size: 18px;
+}
+
+/* Habilidades */
+.habilidades {
+	padding: 0;
+}
+
+.habilidad {
+	background-color: #0F6A62;
+	color: #fff;
+	display: inline-block;
+	font-size: 12px;
+	text-transform: uppercase;
+	padding: .5em;
+}
+
+.habilidad--proyecto {
+	background-color: #29597C;
+	color: #fff;
+	display: inline-block;
+	font-size: 12px;
+	text-transform: uppercase;
+	padding: .5em;
+}
+
+/* Proyectos */
+
+.proyectos {
+	margin-left: 350px;
+	padding: 1em;
+
+	display: table;
+}
+
+.proyecto {
+	display: table-cell;
+	padding: 1em;
+	width: 50%;
+}
+
+.proyecto__imagen {
+	width: 100%;
+}
+
+.proyecto__titulo {
+	color: #29597C;
+	font-size: 18px;
+}
+
+.proyecto__descripcion {
+	color: #797D7F;
+}
+	</style>
+</head>
+<body>
+	<section class="lateral">
+		
+		<div class="perfil">
+			<figure class="perfil__circulo">
+				<img src="perfil.jpeg" alt="" class="perfil__foto">
+			</figure>
+			<h1 class="perfil__nombres">KEVIN MOREJON GUAMAN</h1>
+		</div>
+
+		<div class="informacion">
+			
+			<h2 class="informacion__titulo">ESTUDIANTE DE LA PODEROSA UG</h2>
+			<p class="informacion__descripcion">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure sequi voluptas incidunt cum vero eos fuga laudantium dolore minus molestiae.</p>
+
+			<ul class="habilidades">
+				<li class="habilidad">Html 5</li>
+				<li class="habilidad">Css 3</li>
+				<li class="habilidad">Python</li>
+				<li class="habilidad">Java</li>
+			</ul>
+
+		</div>
+
+	</section>
+
+	<section class="proyectos">
+		
+		<div class="row">
+			<article class="proyecto">
+				
+				<img src="proyecto1.jpg" alt="" class="proyecto__imagen">
+				<h3 class="proyecto__titulo">DESARROLLO WEB</h3>
+				<p class="proyecto__descripcion">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia porro ea, expedita enim incidunt quidem at voluptatibus quisquam! Aliquid harum autem officiis minus incidunt vero eos sint pariatur sunt. Neque?</p>
+
+
+			</article>
+
+			
+			<article class="proyecto">
+				
+				<img src="proyecto2.jpg" alt="" class="proyecto__imagen">
+				<h3 class="proyecto__titulo">BASE DE DATOS</h3>
+				<p class="proyecto__descripcion">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia porro ea, expedita enim incidunt quidem at voluptatibus quisquam! Aliquid harum autem officiis minus incidunt vero eos sint pariatur sunt. Neque?</p>
+
+
+
+			</article>
+		</div>
+
+		<div class="row">
+			<article class="proyecto">
+				
+				<img src="proyecto3.jpg" alt="" class="proyecto__imagen">
+				<h3 class="proyecto__titulo">GIT</h3>
+				<p class="proyecto__descripcion">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia porro ea, expedita enim incidunt quidem at voluptatibus quisquam! Aliquid harum autem officiis minus incidunt vero eos sint pariatur sunt. Neque?</p>
+
+
+
+			</article>
+
+			<article class="proyecto">
+				
+				<img src="proyecto4.jpg" alt="" class="proyecto__imagen">
+				<h3 class="proyecto__titulo">ANDROID</h3>
+				<p class="proyecto__descripcion">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia porro ea, expedita enim incidunt quidem at voluptatibus quisquam! Aliquid harum autem officiis minus incidunt vero eos sint pariatur sunt. Neque?</p>
+
+
+			</article>
+		</div>
+
+	</section>
+</body>
+</html>
